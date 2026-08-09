@@ -1,0 +1,1 @@
+© 2026 Balamurugan Dhandapani (Balamurugan D). All Rights Reserved. This code and content may not be copied, modified, distributed, or reused in any form without explicit written permission from the author.
