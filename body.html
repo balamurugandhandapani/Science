@@ -1,0 +1,50 @@
+<main class="explorer-wrap" id="explorer" name="top">
+  <div class="explorer-intro">
+    <p class="eyebrow">Educational Resource · 118 Elements</p>
+    <h2>Periodic Table Data Explorer</h2>
+    <p>Search or click any element below to view all 56 tracked properties on one page — atomic structure, physical &amp; chemical properties, pH behavior, band gap, occurrence, nuclear data, etymology, and industrial uses.</p>
+  </div>
+
+  <div class="search-row">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by name or symbol (e.g. Iron, Fe)" autocomplete="off">
+      <div class="suggestions" id="suggestions"></div>
+    </div>
+    <p class="search-hint">&#8629; selects first match &middot; click any cell in the periodic table below</p>
+  </div>
+
+  <div class="legend" id="legend">
+    <span data-block="s"><i style="background:var(--s-block)"></i> s-block</span>
+    <span data-block="p"><i style="background:var(--p-block)"></i> p-block</span>
+    <span data-block="d"><i style="background:var(--d-block)"></i> d-block</span>
+    <span data-block="f"><i style="background:var(--f-block)"></i> f-block</span>
+  </div>
+
+  <div class="ptable-frame">
+    <div class="ptable" id="ptable"></div>
+  </div>
+
+  <div id="detail">
+    <div class="detail-header">
+      <div class="big-sym" id="dSym">H</div>
+      <div class="head-meta">
+        <h2 id="dName">Hydrogen</h2>
+        <div class="sub" id="dSub"></div>
+      </div>
+      <div class="head-badges" id="dBadges"></div>
+    </div>
+    <div class="sections" id="sections"></div>
+  </div>
+
+  <div class="empty-state" id="emptyState">
+    <div class="big">&#9678;</div>
+    Select an element from the table above, or search by name/symbol, to view its full data sheet.
+  </div>
+
+  <p class="sources-note">
+    Data compiled from a CRC Handbook / NIST / IUPAC-derived periodic-table database, with atomic mass, ionization
+    energy and group numbering cross-checked directly against IUPAC CIAAW and NIST reference tables. Descriptive
+    fields (uses, toxicity, alloys, minerals) are summarized from standard chemistry references and are intended
+    for study purposes; for safety-critical or citation use, verify against the primary source.
+  </p>
+</main>
