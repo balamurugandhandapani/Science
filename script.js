@@ -8,17 +8,17 @@ const SECTIONS = [
   { title: "2 · Atomic Structure",
     fields: ["Protons","Electrons (neutral atom)","Neutrons (most common isotope)","Electron Configuration","Electron Shell Distribution (Bohr rings, per shell)","Valence Electron Count","Valence Shell","Oxidation States (common)","Common Ions"] },
   { title: "3 &middot; Physical Properties",
-    fields: ["Natural State (at 25°C/298K)","Color","Density (g/cm3)","Melting Point (K)","Melting Point (°C)","Boiling Point (K)","Boiling Point (°C)","Hardness (Mohs scale)","Crystal Structure"] },
+    fields: ["Natural State (at 25°C/298K)","Color","Density (g/cm3)","Melting Point (K)","Melting Point (°C)","Boiling Point (K)","Boiling Point (°C)","Hardness (Mohs scale)","Crystal Structure","Atomic Radius (pm)","Covalent Radius (pm)","Van der Waals Radius (pm)","Heat of Fusion (kJ/mol)","Heat of Vaporization (kJ/mol)"] },
   { title: "4 &middot; Chemical Properties",
-    fields: ["Metal / Nonmetal / Metalloid","Organic / Inorganic Chemistry Role","Reactive or Inert","Electronegativity (Pauling scale)","Electron Affinity (eV)","1st Ionization Energy (eV)","Metallic Character","Oxide Type (acid/base character)","pH Value (typical aqueous form)","pH Nature (Acidic/Basic/Neutral)","pH Trend Across Oxidation States","Common Compounds"] },
+    fields: ["Metal / Nonmetal / Metalloid","Organic / Inorganic Chemistry Role","Reactive or Inert","Electronegativity (Pauling scale)","Electron Affinity (eV)","1st Ionization Energy (eV)","Metallic Character","Oxide Type (acid/base character)","pH Value (typical aqueous form)","pH Nature (Acidic/Basic/Neutral)","pH Trend Across Oxidation States","Standard Electrode Potential","Solution / Ion Color","Common Compounds"] },
   { title: "5 &middot; Electrical &amp; Magnetic Properties",
     fields: ["Electrical Conductivity","Thermal Conductivity (W/m·K)","Band Gap - Natural State (eV)","Band Gap - Other Oxidation States / Compounds","Magnetic Property"] },
   { title: "6 &middot; Occurrence",
     fields: ["Natural or Synthetic","Radioactive or Stable","Abundance in Earth's Crust (mg/kg, ppm)","Common Minerals / Ores","Biological Importance"] },
   { title: "7 &middot; Nuclear Properties",
-    fields: ["Common Isotopes","Half-life (if radioactive)"] },
+    fields: ["Common Isotopes","Half-life (if radioactive)","Decay Mode (primary isotope)","Decay Product (primary isotope)","Number of Known Isotopes","Number of Stable Isotopes"] },
   { title: "8 &middot; Industrial &amp; Everyday Uses",
-    fields: ["Major Applications","Important Alloys","Toxicity","Biological Role"] },
+    fields: ["Major Applications","Annual Global Production","Important Alloys","Toxicity","Biological Role"] },
   { title: "9 · Etymology & Notable Facts",
     fields: ["Element Name Origin / Etymology","Element Symbol Origin","Discovered By","Year / Period Officially Discovered","Specific / Notable Property"] }
 ];
@@ -113,6 +113,7 @@ const CHEMICAL_FORMULA_FIELDS = {
   "Common Ions": formatIonText,
   "Common Isotopes": formatIsotopeText,
   "Half-life (if radioactive)": formatIsotopeText,
+  "Decay Product (primary isotope)": formatIsotopeText,
 };
 
 function fmt(v, field){

@@ -142,8 +142,8 @@ header {
   text-align: center;
 }
 .logo {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.5rem;
@@ -155,6 +155,28 @@ header {
   font-weight: bold;
   text-align: center;
   color: var(--text-dark);
+}
+
+/* Sub Header */
+.site-tagline {
+  margin: 8px 0 0;
+  text-align: center;
+  line-height: 1.45;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.site-tagline span {
+  display: block;
+  color: var(--accent);
+  font-style: italic;
+}
+.site-tagline [lang="ta"] {
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+.site-tagline .tagline-en {
+  font-size: 0.68rem;
+  font-weight: 400;
+  margin-top: 2px;
 }
 
 /* Navigation */
